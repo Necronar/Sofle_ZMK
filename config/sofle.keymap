@@ -117,7 +117,7 @@
  */
             bindings = <
 &kp GRAVE  &kp N1      &kp N2       &kp N3       &kp N4       &kp N5                           &kp N6    &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
-&tog 0     &kp INS     &kp PSCRN    &kp K_CMENU  &trans       &trans                           &kp       &kp       &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&tog 0     &kp INS     &kp PSCRN    &kp K_CMENU  &trans       &trans                           &none     &none    &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
 &tog 1     &kp LALT    &kp LCTRL    &kp LSHFT    &trans       &kp CLCK                         &kp MINUS &kp EQUAL &kp LBRC   &kp RBRC  &kp PIPE  &kp GRAVE
 &kp LSHFT  &kp K_UNDO  &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans   &kp C_MUTE    &kp HOME  &kp UNDER &kp PLUS  &kp LBKT   &kp RBKT  &kp BSLH  &kp TILDE
                        &trans       &trans       &trans       &trans   &kp SPACE     &trans    &trans    &trans    &trans     &trans
