@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT	0
-#define MAC	1
+#define PC	1
 #define LOWER	2
 #define RAISE	3
 #define NUMPAD	4
@@ -31,7 +31,7 @@
  * |------+------+------+------+------+------| Vol/Mt|       |PgU/PgD|------+------+------+------+------+------|
  * |LShift|   Z  |   X  |   C  |   V  |   B  |-------|       |-------|   N  |   M  |   ,  |   .  |   /  |LShift|
  * `-----------------------------------------/       /        \      \-----------------------------------------'
- *            |      | WIN  |  ALT | LOWER| / Space /          \Enter \  |RAISE |R-ALT | WIN  | RCTR |
+ *            |      | ALT  |  MAC | LOWER| / Space /          \Enter \  |RAISE |  MAC | R-ALT | RCTR |
  *            |      |      |      |      |/       /            \      \ |      |      |      |      |
  *            `----------------------------------'               '------''---------------------------'
  */
@@ -39,15 +39,15 @@
 &lt 4 GRAVE &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                         &kp N6     &kp N7    &kp N8    &kp N9   &kp N0   &kp MINUS
 &kp TAB     &kp Q  &kp W    &kp E    &kp R     &kp T                          &kp Y      &kp U     &kp I     &kp O    &kp P    &kp BSPC
 &kp LCTRL   &kp A  &kp S    &kp D    &kp F     &kp G                          &kp H      &kp J     &kp K     &kp L    &kp SEMI &kp SQT
-&kp LSHFT   &kp Z  &kp X    &kp C    &kp V     &kp B  &kp C_MUTE    &none     &kp N      &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-                   &none    &kp LGUI &kp LALT  &mo 2  &kp SPACE     &kp RET   &mo 3      &kp RALT  &kp RGUI  &kp RCTRL
+&kp LSHFT   &kp Z  &kp X    &kp C    &kp V     &kp B  &kp C_MUTE    &kp C_PP  &kp N      &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+                   &none    &kp LALT &kp LGUI  &mo 2  &kp SPACE     &kp RET   &mo 3      &kp RGUI  &kp RALT  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        mac_layer {
-/* MAC
+        pc_layer {
+/* PC
  * ,-----------------------------------------.                       ,-----------------------------------------.
  * |  `   |   1  |   2  |   3  |   4  |   5  |                       |   6  |   7  |   8  |   9  |   0  |   -  |
  * |------+------+------+------+------+------|                       |------+------+------+------+------+------|
@@ -57,7 +57,7 @@
  * |------+------+------+------+------+------| Vol/Mt|       |PgU/PgD|------+------+------+------+------+------|
  * |LShift|   Z  |   X  |   C  |   V  |   B  |-------|       |-------|   N  |   M  |   ,  |   .  |   /  |LShift|
  * `-----------------------------------------/       /        \      \-----------------------------------------'
- *            |      | ALT  |  MAC | LOWER| / Space /          \Enter \  |RAISE |  MAC | ALT  | RCTR |
+ *            |      | WIN  |  ALT | LOWER| / Space /          \Enter \  |RAISE | R-ALT| WIN  | RCTR |
  *            |      |      |      |      |/       /            \      \ |      |      |      |      |
  *            `----------------------------------'               '------''---------------------------'
  */
@@ -65,8 +65,8 @@
 &lt 4 GRAVE &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                         &kp N6   &kp N7    &kp N8    &kp N9   &kp N0   &kp MINUS
 &kp TAB     &kp Q  &kp W    &kp E    &kp R     &kp T                          &kp Y    &kp U     &kp I     &kp O    &kp P    &kp BSPC
 &kp LCTRL   &kp A  &kp S    &kp D    &kp F     &kp G                          &kp H    &kp J     &kp K     &kp L    &kp SEMI &kp SQT
-&kp LSHFT   &kp Z  &kp X    &kp C    &kp V     &kp B  &kp C_MUTE    &none     &kp N    &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-                   &none    &kp LALT &kp LGUI  &mo 2  &kp SPACE     &kp RET   &mo 3    &kp RGUI  &kp RALT  &kp RCTRL
+&kp LSHFT   &kp Z  &kp X    &kp C    &kp V     &kp B  &kp C_MUTE    &kp C_PP  &kp N    &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+                   &none    &kp LGUI &kp LALT  &mo 2  &kp SPACE     &kp RET   &mo 3    &kp RALT  &kp RGUI  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
