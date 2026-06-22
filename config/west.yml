@@ -4,8 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
-    - name: gpeye
-      url-base: https://github.com/Necronar
+    - name: necronar
+      url-base: https://github.com/necronar
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -15,7 +15,7 @@ manifest:
       remote: urob
       revision: main
     - name: nice-view-mod
-      remote: gpeye
+      remote: necronar
       revision: main
   self:
     path: config
